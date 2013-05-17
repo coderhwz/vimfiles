@@ -8,3 +8,4 @@ endif
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 language messages zh_CN.utf-8
+set guifont=Droid\ Sans\ Mono:h11         " 字体

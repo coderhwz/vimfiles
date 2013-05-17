@@ -1,8 +1,8 @@
-set rtp+=$HOME/.vim/
-set rtp+=$HOME/.vim/resource/php-manual/
-set rtp+=$HOME/.vim/bundle/vundle/
 set nocompatible                          " 与vi不兼容
 filetype off                              " required!
+"set rtp+=$HOME/.vim/
+"set rtp+=$HOME/.vim/resource/php-manual/
+set rtp+=$HOME/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
@@ -21,7 +21,7 @@ Bundle 'vim-scripts/LargeFile.git'
 Bundle 'nono/jquery.vim.git'
 Bundle 'msanders/snipmate.vim.git'
 Bundle 'tpope/vim-surround.git'
-
+Bundle 'vim-scripts/Tagbar.git'
 filetype plugin indent on                 " required!
 
 let mapleader=","
@@ -44,7 +44,7 @@ set hlsearch                              " 高亮搜索文本
 set ignorecase
 " set smartindent
 set shiftwidth=4                          " 自动缩进
-set guifont=Droid\ Sans\ Mono:h11         " 字体
+set guifont=Monaco\ 10         " 字体
 set pumheight=15
 set completeopt=longest,menu
 set undofile
@@ -57,7 +57,7 @@ set ballooneval
 set balloondelay=200
 set viewoptions=folds
 set foldminlines=10
-colorscheme codeschool                    " 颜色模式
+colorscheme jellybeans                    " 颜色模式
 
 so $HOME/.vim/ext.vim
 if(has("win32") || has("win64"))
