@@ -1,0 +1,11 @@
+tmp/
+.netrwhist
+bundle/FuzzyFinder/
+bundle/L9/
+bundle/minibufexpl.vim/
+bundle/neocomplcache/
+bundle/nerdcommenter/
+bundle/nerdtree/
+bundle/syntastic/
+bundle/tabular/
+bundle/vim-powerline/
