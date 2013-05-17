@@ -9,14 +9,13 @@ if has("gui_running")
 	winpos 260 171
 endif
 
-nnoremap <F3> :TlistToggle<CR>
 nnoremap <C-Right> :bn<CR>
 nnoremap <C-Left> :bp<CR>
 nnoremap <leader>s :w<CR>
-nnoremap <leader>ff :FufFile<CR>
-nnoremap <leader>fb :FufBuffer<CR>
+" nnoremap <leader>ff :FufFile<CR>
+" nnoremap <leader>fb :FufBuffer<CR>
 nnoremap <leader>f :CtrlP<CR>
-nnoremap <leader>bu :CtrlPBuffer<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <S-F2> :NERDTreeMirror<CR>
 
@@ -91,8 +90,8 @@ let NERDSpaceDelims=1
 
 autocmd FileType nerdtree noremap <buffer> <C-Right> <nop>
 autocmd FileType nerdtree noremap <buffer> <C-Left> <nop>
-autocmd FileType nerdtree noremap <buffer> <leader>f <nop>
-autocmd FileType nerdtree noremap <buffer> <leader>bu <nop>
+" autocmd FileType nerdtree noremap <buffer> <leader>f <nop>
+" autocmd FileType nerdtree noremap <buffer> <leader>bu <nop>
 autocmd BufNewFile,Bufread *.ros,*.inc,*.php set keywordprg="help"
 autocmd BufWinLeave * silent! mkview
 autocmd BufWinEnter * silent! loadview
@@ -100,3 +99,6 @@ autocmd FileType php setlocal dict+=$HOME/.vim/resource/php.dict
 autocmd FileType php setlocal dict+=$HOME/.vim/resource/wp.dict
 autocmd FileType c setlocal dict+=$HOME/.vim/resource/gtk.c.dict
 autocmd BufRead,BufNewFile *.js set ft=javascript syntax=jquery
+
+let g:ctrlp_user_command =
+    \ 'find %s -type f | grep -v -P "\.png$|\.jpg|\.gif|\.bmp|\.so|tags|/tmp/|/\.hg/|/\.git/"'          " MacOSX/Linux

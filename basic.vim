@@ -1,7 +1,7 @@
 set nocompatible                          " ”Îvi≤ªºÊ»›
 filetype off                              " required!
-"set rtp+=$HOME/.vim/
-"set rtp+=$HOME/.vim/resource/php-manual/
+set rtp+=$HOME/.vim/
+set rtp+=$HOME/.vim/resource/php-manual/
 set rtp+=$HOME/.vim/bundle/vundle/
 call vundle#rc()
 
