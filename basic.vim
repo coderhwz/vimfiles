@@ -58,7 +58,6 @@ set balloondelay=200
 set viewoptions=folds
 set foldminlines=10
 colorscheme jellybeans                    " ÑÕÉ«Ä£Ê½
-cd $HOME
 
 so $HOME/.vim/ext.vim
 if(has("win32") || has("win64"))
