@@ -100,5 +100,7 @@ autocmd FileType php setlocal dict+=$HOME/.vim/resource/wp.dict
 autocmd FileType c setlocal dict+=$HOME/.vim/resource/gtk.c.dict
 autocmd BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 
+if has('unix')
 let g:ctrlp_user_command =
     \ 'find %s -type f | grep -v -P "\.png$|\.jpg|\.gif|\.bmp|\.so|tags|/tmp/|/\.hg/|/\.git/"'          " MacOSX/Linux
+endif
