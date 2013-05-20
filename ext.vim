@@ -88,6 +88,7 @@ let g:neocomplcache_temporary_dir="$HOME/.vim/tmp/neocomplcache"
 let NERDMenuMode=0
 let NERDSpaceDelims=1
 """"""""""""""""""""""""""NERD_commenter END """"""""""""""""
+let g:loaded_syntastic_plugin=0
 
 autocmd FileType nerdtree noremap <buffer> <C-Right> <nop>
 autocmd FileType nerdtree noremap <buffer> <C-Left> <nop>
