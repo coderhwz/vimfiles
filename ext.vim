@@ -102,3 +102,15 @@ autocmd BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 
 let g:ctrlp_user_command =
     \ 'find %s -type f | grep -v -P "\.png$|\.jpg|\.gif|\.bmp|\.so|tags|/tmp/|/\.hg/|/\.git/"'          " MacOSX/Linux
+" function! ReloadSnippets( ft )
+    " if strlen( a:ft ) == 0
+        " let filetype = "_"
+    " else
+        " let filetype = a:ft
+    " endif
+
+    " call ResetSnippets()
+    " call GetSnippets( g:snippets_dir, filetype )
+" endfunction
+
+nmap <leader>rr :call ReloadAllSnippets()<CR>
