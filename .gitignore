@@ -1,5 +1,6 @@
 tmp/
 view/
+*.orig
 .netrwhist
 bundle/vundle
 bundle/neocomplcache

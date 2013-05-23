@@ -18,6 +18,7 @@ nnoremap <leader>f :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <S-F2> :NERDTreeMirror<CR>
+let g:NERDTreeBookmarksFile=expand('$HOME') . "/.vim/tmp/nerdtree/bookmark"
 
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -87,6 +88,8 @@ let g:neocomplcache_temporary_dir="$HOME/.vim/tmp/neocomplcache"
 let NERDMenuMode=0
 let NERDSpaceDelims=1
 """"""""""""""""""""""""""NERD_commenter END """"""""""""""""
+let g:loaded_syntastic_plugin=0
+
 
 autocmd FileType nerdtree noremap <buffer> <C-Right> <nop>
 autocmd FileType nerdtree noremap <buffer> <C-Left> <nop>
@@ -100,17 +103,17 @@ autocmd FileType php setlocal dict+=$HOME/.vim/resource/wp.dict
 autocmd FileType c setlocal dict+=$HOME/.vim/resource/gtk.c.dict
 autocmd BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 
+if has('unix')
 let g:ctrlp_user_command =
     \ 'find %s -type f | grep -v -P "\.png$|\.jpg|\.gif|\.bmp|\.so|tags|/tmp/|/\.hg/|/\.git/"'          " MacOSX/Linux
-" function! ReloadSnippets( ft )
-    " if strlen( a:ft ) == 0
-        " let filetype = "_"
-    " else
-        " let filetype = a:ft
-    " endif
+endif
 
-    " call ResetSnippets()
-    " call GetSnippets( g:snippets_dir, filetype )
-" endfunction
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
 
-nmap <leader>rr :call ReloadAllSnippets()<CR>
+nnoremap <C-n> :call NumberToggle()<cr>

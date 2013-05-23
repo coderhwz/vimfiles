@@ -1,4 +1,4 @@
-set nocompatible                          " Óëvi²»¼æÈİ
+set nocompatible                          " ä¸viä¸å…¼å®¹
 filetype off                              " required!
 set rtp+=$HOME/.vim/
 set rtp+=$HOME/.vim/resource/php-manual/
@@ -22,42 +22,44 @@ Bundle 'nono/jquery.vim.git'
 Bundle 'msanders/snipmate.vim.git'
 Bundle 'tpope/vim-surround.git'
 Bundle 'vim-scripts/Tagbar.git'
+Bundle 'vim-scripts/matchit.zip.git'
 filetype plugin indent on                 " required!
 
 let mapleader=","
 let g:mapleader =","
 set history=100
-syntax on                                 " Óï·¨¸ßÁÁ¿ªÆô
-set tabstop=4                             " tabµÄ³¤¶È
+syntax on                                 " è¯­æ³•é«˜äº®å¼€å¯
+set tabstop=4                             " tabçš„é•¿åº¦
 set fileencodings=utf8,cp936,gb18030,big5
-set termencoding=utf-8                    " ½çÃæÏÔÊ¾±àÂë
+set termencoding=utf-8                    " ç•Œé¢æ˜¾ç¤ºç¼–ç 
 set encoding=utf-8
-set number                                " ÏÔÊ¾ĞĞºÅ
-set tag=tags;                             " ÌıËµ·ÖºÅ²»ÄÜÉÙ
-set nobomb                                " È¥µôutf-8 bom Í·
-set backspace=2                           " ²»ÖªµÀ
-set cindent                               " ×Ô¶¯Ëõ½ø
-set smarttab                              " ÖÇÄÜtab
-set t_Co=256                              " ÖÕ¶ËÏÂÉèÖÃ³É256É«
+set number                                " æ˜¾ç¤ºè¡Œå·
+set tag=tags;                             " å¬è¯´åˆ†å·ä¸èƒ½å°‘
+set nobomb                                " å»æ‰utf-8 bom å¤´
+set backspace=2                           " ä¸çŸ¥é“
+set cindent                               " è‡ªåŠ¨ç¼©è¿›
+set smarttab                              " æ™ºèƒ½tab
+set t_Co=256                              " ç»ˆç«¯ä¸‹è®¾ç½®æˆ256è‰²
 set smartcase
-set hlsearch                              " ¸ßÁÁËÑË÷ÎÄ±¾
+set hlsearch                              " é«˜äº®æœç´¢æ–‡æœ¬
 set ignorecase
 " set smartindent
-set shiftwidth=4                          " ×Ô¶¯Ëõ½ø
-set guifont=Monaco\ 10         " ×ÖÌå
+set shiftwidth=4                          " è‡ªåŠ¨ç¼©è¿›
+set guifont=Monaco\ 10         " å­—ä½“
 set pumheight=15
 set completeopt=longest,menu
 set undofile
 set incsearch
 set autoindent
 set laststatus=2
-set directory=$HOME/.vim/tmp/swp_files    " ÉèÖÃswpÎÄ¼şÂ·¾¶
+set directory=$HOME/.vim/tmp/swp_files    " è®¾ç½®swpæ–‡ä»¶è·¯å¾„
 set undodir=$HOME/.vim/tmp/undofiles
 set ballooneval
 set balloondelay=200
 set viewoptions=folds
 set foldminlines=10
-colorscheme jellybeans                    " ÑÕÉ«Ä£Ê½
+colorscheme jellybeans                    " é¢œè‰²æ¨¡å¼
+set backupdir=$HOME/.vim/tmp/swp_files
 
 so $HOME/.vim/ext.vim
 if(has("win32") || has("win64"))
