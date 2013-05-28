@@ -56,7 +56,7 @@ set directory=$HOME/.vim/tmp/swp_files    " 设置swp文件路径
 set undodir=$HOME/.vim/tmp/undofiles
 set ballooneval
 set balloondelay=200
-set viewoptions=folds
+set viewoptions=folds,cursor
 set foldminlines=10
 colorscheme jellybeans                    " 颜色模式
 set backupdir=$HOME/.vim/tmp/swp_files
