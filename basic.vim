@@ -23,6 +23,7 @@ Bundle 'msanders/snipmate.vim.git'
 Bundle 'tpope/vim-surround.git'
 Bundle 'vim-scripts/Tagbar.git'
 Bundle 'vim-scripts/matchit.zip.git'
+Bundle 'vim-scripts/taglist.vim.git'
 filetype plugin indent on                 " required!
 
 let mapleader=","
