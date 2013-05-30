@@ -117,3 +117,9 @@ function! NumberToggle()
 endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
+nnoremap <silent> <F3> :TlistToggle<CR>
+let g:Tlist_Exit_OnlyWindow=1
+let g:Tlist_WinWidth=30
+let g:Tlist_Use_Right_Window=1
+let g:Tlist_Show_One_File=1
+let g:TlistEnable_Fold_Column=0
