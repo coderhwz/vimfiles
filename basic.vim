@@ -55,6 +55,7 @@ set autoindent
 set laststatus=2
 set directory=$HOME/.vim/tmp/swp_files    " 设置swp文件路径
 set undodir=$HOME/.vim/tmp/undofiles
+set colorcolumn=80
 set ballooneval
 set balloondelay=200
 set viewoptions=folds,cursor
