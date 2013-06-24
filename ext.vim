@@ -71,7 +71,8 @@ let g:neocomplcache_source_rank = {
 			\ 'snippets_complete' : 100,
 			\ }
 " " \ 'abbrev_complete' : 50,
-
+autocmd InsertEnter * NeoComplCacheCachingBuffer
+autocmd InsertLeave * NeoComplCacheCachingBuffer
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 
