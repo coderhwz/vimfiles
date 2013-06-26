@@ -39,6 +39,8 @@ vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
 
+inoremap  <c-]> <c-x><c-]> "ctags 补全快捷键
+
 let g:syntastic_check_on_open=1
 let snips_author='hwz'                                                             " 代码片段的作者
 
