@@ -126,3 +126,4 @@ let g:Tlist_WinWidth=30
 let g:Tlist_Use_Right_Window=1
 let g:Tlist_Show_One_File=1
 let g:TlistEnable_Fold_Column=0
+let tlist_php_settings = 'php;c:class;f:function;d:constant'
