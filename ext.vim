@@ -69,12 +69,13 @@ let g:neocomplcache_enable_smart_case = 0
 let g:neocomplcache_min_syntax_length = 2
 let g:neocomplcache_enable_auto_select = 1
 let g:neocomplcache_enable_ignore_case=0
+" let g:neocomplcache_keyword_patterns._='\h\w*'
 let g:neocomplcache_source_rank = {
 			\ 'snippets_complete' : 100,
 			\ }
 " " \ 'abbrev_complete' : 50,
-autocmd InsertEnter * NeoComplCacheCachingBuffer
-autocmd InsertLeave * NeoComplCacheCachingBuffer
+" autocmd InsertEnter * NeoComplCacheCachingBuffer
+" autocmd InsertLeave * NeoComplCacheCachingBuffer
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 
